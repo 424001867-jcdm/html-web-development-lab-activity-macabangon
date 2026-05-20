@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - Home</title>
+    <style>
+        /* Modern Design System & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Elegant Header Styling */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Clean Navigation Menu */
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #2a5298;
+        }
+
+        /* Layout Layout Container */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        /* Beautiful Card Components */
+        section {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #edf2f7;
+        }
+
+        section h2 {
+            color: #1e3c72;
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Bio Details Layout */
+        article {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        /* Perfect Circular Frame for Profile Picture */
+        .profile-frame {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the container circular */
+            overflow: hidden; /* Clips the image into a circle */
+            border: 4px solid #2a5298; /* Frame border */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+        }
+
+        .profile-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Prevents the image from distorting */
+        }
+
+        /* Bullet List Styling */
+        ul.hobbies-list {
+            list-style: none; /* Clear defaults */
+        }
+
+        ul.hobbies-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #4a5568;
+        }
+
+        ul.hobbies-list li::before {
+            content: "•";
+            color: #2a5298;
+            font-weight: bold;
+            font-size: 1.3rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        /* Footer Decoration */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+
+        /* Responsive Fix for Mobile Screens */
+        @media (max-width: 600px) {
+            article {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Student Profile</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home (Bio)</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <article>
+                <div class="profile-frame">
+                    <img src="images/profile.jpg" alt="A professional portrait of an Information Technology student smiling">
+                </div>
+                <div>
+                    <p>Hello! I am a passionate Information Technology student dedicated to learning web development, design, and interactive technology. This website is a showcase of my fundamental skills in structuring semantic markup and accessible content.</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h2>My Hobbies & Interests</h2>
+            <p style="color: #718096; margin-bottom: 1rem;">Here are a few things I enjoy doing outside of coding:</p>
+            <ul class="hobbies-list">
+                <li>3D Modeling and Character Design</li>
+                <li>Digital Art & Video Editing</li>
+                <li>PC Hardware Customization and Optimization</li>
+                <li>Exploring Interactive UI/UX Mobile Wireframes</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Profile. Created for HTML Fundamentals Lab Activity.</p>
+    </footer>
+
+</body>
+</html>
