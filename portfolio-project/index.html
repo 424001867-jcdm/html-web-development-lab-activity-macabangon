@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <h1>John Carlo Macabangon</h1>
+            <p class="subtitle">Bachelor of Science in Information Technology Student</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-wrapper">
+
+        <section id="about" class="card-section">
+            <div class="about-flex">
+                <div class="profile-frame">
+                    <img src="images/profile.jpg" alt="A professional portrait of Alex Santos smiling, an IT student specializing in web design and multimedia assets.">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Welcome to my professional portfolio! I am an undergraduate Information Technology student focusing on frontend development, streamline UI/UX architectures, and interactive digital graphics. I combine logical layout architectures with clean design philosophies to construct robust digital web applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="card-section">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Semantic HTML5</div>
+                <div class="skill-tag">Responsive CSS3 Grid & Flexbox</div>
+                <div class="skill-tag">3D Modeling & Rendering (Blender)</div>
+                <div class="skill-tag">UI/UX Mobile Wireframing</div>
+                <div class="skill-tag">PC Hardware Configuration</div>
+                <div class="skill-tag">Video Production & Editing</div>
+            </div>
+        </section>
+
+        <section id="projects" class="card-section">
+            <h2>Featured Academic Work</h2>
+            <div class="projects-container">
+                <article class="project-card">
+                    <h3>Employee Complaint Management System</h3>
+                    <p class="project-meta">Core Academic Project • Full System Design</p>
+                    <p>Designed comprehensive structural architectures, use-case metrics, and class hierarchy diagrams for an enterprise-facing workflow engine resolving administrative complaints safely.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Mobile Gallery Smart Filter Bar</h3>
+                    <p class="project-meta">UI/UX Redesign Case Study</p>
+                    <p>Created a high-impact, minimalist wireframe architecture maximizing media indexing utility for responsive gallery viewing on compact screen parameters.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="card-section">
+            <h2>Get In Touch</h2>
+            <p class="form-instruction">Have an inquiry, project collaboration opportunity, or hardware optimization question? Leave a message below.</p>
+            
+            <form action="#" method="POST" class="interactive-form">
+                <div class="form-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="username" name="username" placeholder="Juan Dela Cruz" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="useremail">Email Address</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="juan.delacruz@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="usermessage">Message</label>
+                    <textarea id="usermessage" name="usermessage" rows="5" placeholder="Type your inquiry or assignment comments here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Secure Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Alex Santos Portfolio. Built using semantic HTML5 and responsive CSS Flexbox for Terminal Assessment 1.</p>
+    </footer>
+
+</body>
+</html>
